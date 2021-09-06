@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cellId" id="B1L-Uj-SqT" customClass="RestaurantListCell" customModule="HPApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="567" height="467"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Nf0-c0-Jro">
+                <rect key="frame" x="0.0" y="0.0" width="567" height="467"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r1p-7Q-D8t">
+                        <rect key="frame" x="10" y="357" width="547" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="ここに店名が入ります" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSh-MJ-nXu">
+                                <rect key="frame" x="0.0" y="0.0" width="547" height="66"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ここにジャンルが入ります" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nk-js-If9">
+                                <rect key="frame" x="0.0" y="66" width="547" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ここに住所が入ります" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zy8-68-boI">
+                                <rect key="frame" x="0.0" y="80.5" width="547" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="100" id="Be3-nk-0kT"/>
+                        </constraints>
+                    </stackView>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qdy-by-taS">
+                        <rect key="frame" x="0.0" y="15" width="567" height="342"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="qdy-by-taS" secondAttribute="trailing" id="7c4-bK-CUY"/>
+                    <constraint firstItem="r1p-7Q-D8t" firstAttribute="leading" secondItem="Nf0-c0-Jro" secondAttribute="leading" constant="10" id="CYo-Jv-7ad"/>
+                    <constraint firstItem="qdy-by-taS" firstAttribute="top" secondItem="Nf0-c0-Jro" secondAttribute="top" constant="15" id="HUL-ms-hml"/>
+                    <constraint firstAttribute="bottom" secondItem="r1p-7Q-D8t" secondAttribute="bottom" constant="10" id="Jki-mq-MsJ"/>
+                    <constraint firstAttribute="trailing" secondItem="r1p-7Q-D8t" secondAttribute="trailing" constant="10" id="JlS-rS-1Ic"/>
+                    <constraint firstItem="qdy-by-taS" firstAttribute="leading" secondItem="Nf0-c0-Jro" secondAttribute="leading" id="Mao-O7-z5Q"/>
+                    <constraint firstItem="r1p-7Q-D8t" firstAttribute="top" secondItem="qdy-by-taS" secondAttribute="bottom" id="uti-HY-rC9"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="567" height="467"/>
+            <connections>
+                <outlet property="TitleLabel" destination="hSh-MJ-nXu" id="mby-aP-jBK"/>
+                <outlet property="addressLabel" destination="Zy8-68-boI" id="Ey4-sI-47K"/>
+                <outlet property="genreLabel" destination="7Nk-js-If9" id="q8c-JJ-qJb"/>
+                <outlet property="photoImageView" destination="qdy-by-taS" id="Cgt-ID-jBy"/>
+                <outlet property="titleLabel" destination="hSh-MJ-nXu" id="zLV-PE-8Xk"/>
+            </connections>
+            <point key="canvasLocation" x="621" y="-4"/>
+        </collectionViewCell>
+    </objects>
+</document>

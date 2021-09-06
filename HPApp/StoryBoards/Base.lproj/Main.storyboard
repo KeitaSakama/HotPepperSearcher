@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Restaurant List View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="RestaurantListViewController" customModule="HPApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EVV-yY-u5U">
+                                <rect key="frame" x="0.0" y="194" width="414" height="668"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="m0d-09-bZw">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="0WL-75-XWs">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="WH5-zf-GD4">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </collectionViewCellContentView>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="uhY-DI-wwS">
+                                <rect key="frame" x="0.0" y="44" width="414" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="58X-Uf-uDk"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="検索範囲" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8Q-MJ-4Oc">
+                                <rect key="frame" x="10" y="119" width="69.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TVR-WE-cpV">
+                                <rect key="frame" x="0.0" y="148" width="414" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="92O-rz-xJU"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="300m"/>
+                                    <segment title="500m"/>
+                                    <segment title="1km"/>
+                                    <segment title="2km"/>
+                                    <segment title="3km"/>
+                                </segments>
+                                <connections>
+                                    <action selector="rangeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="GtY-9n-cbn"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uhY-DI-wwS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1gW-Bd-R64"/>
+                            <constraint firstItem="G8Q-MJ-4Oc" firstAttribute="top" secondItem="uhY-DI-wwS" secondAttribute="bottom" constant="15" id="2ju-hc-MMm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TVR-WE-cpV" secondAttribute="trailing" id="4KZ-so-eQH"/>
+                            <constraint firstItem="uhY-DI-wwS" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4Xv-3B-hkM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EVV-yY-u5U" secondAttribute="bottom" id="7Dv-uw-13H"/>
+                            <constraint firstItem="EVV-yY-u5U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AV7-sE-ACv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="G8Q-MJ-4Oc" secondAttribute="trailing" symbolic="YES" id="Bk3-wA-AM7"/>
+                            <constraint firstItem="uhY-DI-wwS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MVc-q7-lty"/>
+                            <constraint firstItem="TVR-WE-cpV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NPo-wU-bLR"/>
+                            <constraint firstItem="uhY-DI-wwS" firstAttribute="trailing" secondItem="EVV-yY-u5U" secondAttribute="trailing" id="ad8-TB-bXO"/>
+                            <constraint firstItem="EVV-yY-u5U" firstAttribute="top" secondItem="uhY-DI-wwS" secondAttribute="bottom" constant="90" id="awc-Ui-iZ8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EVV-yY-u5U" secondAttribute="trailing" id="cZr-gj-l60"/>
+                            <constraint firstItem="G8Q-MJ-4Oc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="dni-xy-y83"/>
+                            <constraint firstItem="uhY-DI-wwS" firstAttribute="leading" secondItem="EVV-yY-u5U" secondAttribute="leading" id="hdb-Vs-wjh"/>
+                            <constraint firstItem="TVR-WE-cpV" firstAttribute="top" secondItem="G8Q-MJ-4Oc" secondAttribute="bottom" constant="8" symbolic="YES" id="mKa-CT-qbH"/>
+                            <constraint firstItem="uhY-DI-wwS" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="z7X-nh-yFG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="rangeSegmentedControl" destination="TVR-WE-cpV" id="UiY-61-9rh"/>
+                        <outlet property="restaurantListCollectionView" destination="EVV-yY-u5U" id="qAE-40-8bp"/>
+                        <outlet property="searchText" destination="uhY-DI-wwS" id="Zvs-rG-Zno"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

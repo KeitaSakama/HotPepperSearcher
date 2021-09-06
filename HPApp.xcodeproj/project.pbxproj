@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2D78CF310EA292B98648C175 /* Pods_HPAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08B786A859C6EB61EBFE4F85 /* Pods_HPAppTests.framework */; };
+		32199A5226DE583A00175903 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32199A5026DE56D800175903 /* CoreLocation.framework */; };
+		326EA5AE26E515F8006AD200 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 326EA5AD26E515F8006AD200 /* RestaurantViewController.swift */; };
+		326EA5B226E5CE0D006AD200 /* RestaurantView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 326EA5B126E5CE0D006AD200 /* RestaurantView.storyboard */; };
+		328598A726E0A2CF002626F1 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 328598A626E0A2CF002626F1 /* IQKeyboardManagerSwift */; };
+		32AFB8DD26DB4D8F00EACB0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AFB8DC26DB4D8F00EACB0D /* AppDelegate.swift */; };
+		32AFB8E126DB4D8F00EACB0D /* RestaurantListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AFB8E026DB4D8F00EACB0D /* RestaurantListViewController.swift */; };
+		32AFB8E426DB4D8F00EACB0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32AFB8E226DB4D8F00EACB0D /* Main.storyboard */; };
+		32AFB8E626DB4D9000EACB0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32AFB8E526DB4D9000EACB0D /* Assets.xcassets */; };
+		32AFB8E926DB4D9000EACB0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32AFB8E726DB4D9000EACB0D /* LaunchScreen.storyboard */; };
+		32AFB8F426DB4D9000EACB0D /* HPAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AFB8F326DB4D9000EACB0D /* HPAppTests.swift */; };
+		32AFB8FF26DB4D9000EACB0D /* HPAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AFB8FE26DB4D9000EACB0D /* HPAppUITests.swift */; };
+		32AFB91026DB945B00EACB0D /* RestaurantListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AFB90F26DB945B00EACB0D /* RestaurantListCell.swift */; };
+		32AFB91326DB95DC00EACB0D /* RestaurantListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32AFB91226DB95DC00EACB0D /* RestaurantListCell.xib */; };
+		32AFB91626DBD2E200EACB0D /* Restaurant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32AFB91526DBD2E200EACB0D /* Restaurant.swift */; };
+		B6CBC3BCF630607D35D2DF99 /* Pods_HPApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 426B814ECB4CF21F082DB32D /* Pods_HPApp.framework */; };
+		FC977B046488225DE0D6215C /* Pods_HPApp_HPAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B830658B50365C00A9FF25FB /* Pods_HPApp_HPAppUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		32AFB8F026DB4D9000EACB0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32AFB8D126DB4D8F00EACB0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32AFB8D826DB4D8F00EACB0D;
+			remoteInfo = HPApp;
+		};
+		32AFB8FB26DB4D9000EACB0D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 32AFB8D126DB4D8F00EACB0D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 32AFB8D826DB4D8F00EACB0D;
+			remoteInfo = HPApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08B786A859C6EB61EBFE4F85 /* Pods_HPAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HPAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		13D6BE3D9DAD799CF0A068B6 /* Pods-HPApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPApp.release.xcconfig"; path = "Target Support Files/Pods-HPApp/Pods-HPApp.release.xcconfig"; sourceTree = "<group>"; };
+		32199A5026DE56D800175903 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		326EA5AD26E515F8006AD200 /* RestaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
+		326EA5B126E5CE0D006AD200 /* RestaurantView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RestaurantView.storyboard; sourceTree = "<group>"; };
+		32AFB8D926DB4D8F00EACB0D /* HPApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HPApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		32AFB8DC26DB4D8F00EACB0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		32AFB8E026DB4D8F00EACB0D /* RestaurantListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListViewController.swift; sourceTree = "<group>"; };
+		32AFB8E326DB4D8F00EACB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		32AFB8E526DB4D9000EACB0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		32AFB8E826DB4D9000EACB0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		32AFB8EA26DB4D9000EACB0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32AFB8EF26DB4D9000EACB0D /* HPAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32AFB8F326DB4D9000EACB0D /* HPAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPAppTests.swift; sourceTree = "<group>"; };
+		32AFB8F526DB4D9000EACB0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32AFB8FA26DB4D9000EACB0D /* HPAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		32AFB8FE26DB4D9000EACB0D /* HPAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPAppUITests.swift; sourceTree = "<group>"; };
+		32AFB90026DB4D9000EACB0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32AFB90F26DB945B00EACB0D /* RestaurantListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantListCell.swift; sourceTree = "<group>"; };
+		32AFB91226DB95DC00EACB0D /* RestaurantListCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantListCell.xib; sourceTree = "<group>"; };
+		32AFB91526DBD2E200EACB0D /* Restaurant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurant.swift; sourceTree = "<group>"; };
+		34F26F4F5410B8004C77B0A5 /* Pods-HPApp-HPAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPApp-HPAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-HPApp-HPAppUITests/Pods-HPApp-HPAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		376858B52A995888FC04C65C /* Pods-HPAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPAppTests.release.xcconfig"; path = "Target Support Files/Pods-HPAppTests/Pods-HPAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		426B814ECB4CF21F082DB32D /* Pods_HPApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HPApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AACCFE07922E4663E77E37C /* Pods-HPApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPApp.debug.xcconfig"; path = "Target Support Files/Pods-HPApp/Pods-HPApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AC250314AC044BC713ABBFD8 /* Pods-HPApp-HPAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPApp-HPAppUITests.release.xcconfig"; path = "Target Support Files/Pods-HPApp-HPAppUITests/Pods-HPApp-HPAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B830658B50365C00A9FF25FB /* Pods_HPApp_HPAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HPApp_HPAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA9EFD76D356DF1EA1E722E1 /* Pods-HPAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HPAppTests.debug.xcconfig"; path = "Target Support Files/Pods-HPAppTests/Pods-HPAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		32AFB8D626DB4D8F00EACB0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32199A5226DE583A00175903 /* CoreLocation.framework in Frameworks */,
+				B6CBC3BCF630607D35D2DF99 /* Pods_HPApp.framework in Frameworks */,
+				328598A726E0A2CF002626F1 /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AFB8EC26DB4D9000EACB0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2D78CF310EA292B98648C175 /* Pods_HPAppTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AFB8F726DB4D9000EACB0D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC977B046488225DE0D6215C /* Pods_HPApp_HPAppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		326EA5B326E5ED42006AD200 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				32AFB8E726DB4D9000EACB0D /* LaunchScreen.storyboard */,
+				32AFB8E226DB4D8F00EACB0D /* Main.storyboard */,
+				326EA5B126E5CE0D006AD200 /* RestaurantView.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		326EA5B426E5EEC7006AD200 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				32AFB8E026DB4D8F00EACB0D /* RestaurantListViewController.swift */,
+				326EA5AD26E515F8006AD200 /* RestaurantViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		32AFB8D026DB4D8F00EACB0D = {
+			isa = PBXGroup;
+			children = (
+				32AFB8DB26DB4D8F00EACB0D /* HPApp */,
+				32AFB8F226DB4D9000EACB0D /* HPAppTests */,
+				32AFB8FD26DB4D9000EACB0D /* HPAppUITests */,
+				32AFB8DA26DB4D8F00EACB0D /* Products */,
+				FDB6B847EBA3A20D7966CB0E /* Pods */,
+				E4EAADD078311494467D9A41 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		32AFB8DA26DB4D8F00EACB0D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32AFB8D926DB4D8F00EACB0D /* HPApp.app */,
+				32AFB8EF26DB4D9000EACB0D /* HPAppTests.xctest */,
+				32AFB8FA26DB4D9000EACB0D /* HPAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32AFB8DB26DB4D8F00EACB0D /* HPApp */ = {
+			isa = PBXGroup;
+			children = (
+				326EA5B426E5EEC7006AD200 /* View */,
+				326EA5B326E5ED42006AD200 /* StoryBoards */,
+				32AFB91126DB957500EACB0D /* Xibs */,
+				32AFB91426DBD2A100EACB0D /* Models */,
+				32AFB90E26DB942100EACB0D /* Cells */,
+				32AFB8DC26DB4D8F00EACB0D /* AppDelegate.swift */,
+				32AFB8E526DB4D9000EACB0D /* Assets.xcassets */,
+				32AFB8EA26DB4D9000EACB0D /* Info.plist */,
+			);
+			path = HPApp;
+			sourceTree = "<group>";
+		};
+		32AFB8F226DB4D9000EACB0D /* HPAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				32AFB8F326DB4D9000EACB0D /* HPAppTests.swift */,
+				32AFB8F526DB4D9000EACB0D /* Info.plist */,
+			);
+			path = HPAppTests;
+			sourceTree = "<group>";
+		};
+		32AFB8FD26DB4D9000EACB0D /* HPAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				32AFB8FE26DB4D9000EACB0D /* HPAppUITests.swift */,
+				32AFB90026DB4D9000EACB0D /* Info.plist */,
+			);
+			path = HPAppUITests;
+			sourceTree = "<group>";
+		};
+		32AFB90E26DB942100EACB0D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				32AFB90F26DB945B00EACB0D /* RestaurantListCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		32AFB91126DB957500EACB0D /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				32AFB91226DB95DC00EACB0D /* RestaurantListCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		32AFB91426DBD2A100EACB0D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				32AFB91526DBD2E200EACB0D /* Restaurant.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E4EAADD078311494467D9A41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32199A5026DE56D800175903 /* CoreLocation.framework */,
+				426B814ECB4CF21F082DB32D /* Pods_HPApp.framework */,
+				B830658B50365C00A9FF25FB /* Pods_HPApp_HPAppUITests.framework */,
+				08B786A859C6EB61EBFE4F85 /* Pods_HPAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDB6B847EBA3A20D7966CB0E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AACCFE07922E4663E77E37C /* Pods-HPApp.debug.xcconfig */,
+				13D6BE3D9DAD799CF0A068B6 /* Pods-HPApp.release.xcconfig */,
+				34F26F4F5410B8004C77B0A5 /* Pods-HPApp-HPAppUITests.debug.xcconfig */,
+				AC250314AC044BC713ABBFD8 /* Pods-HPApp-HPAppUITests.release.xcconfig */,
+				FA9EFD76D356DF1EA1E722E1 /* Pods-HPAppTests.debug.xcconfig */,
+				376858B52A995888FC04C65C /* Pods-HPAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		32AFB8D826DB4D8F00EACB0D /* HPApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32AFB90326DB4D9000EACB0D /* Build configuration list for PBXNativeTarget "HPApp" */;
+			buildPhases = (
+				A5924EEF4971AB54FAAB4FCC /* [CP] Check Pods Manifest.lock */,
+				32AFB8D526DB4D8F00EACB0D /* Sources */,
+				32AFB8D626DB4D8F00EACB0D /* Frameworks */,
+				32AFB8D726DB4D8F00EACB0D /* Resources */,
+				CC163F3D3555BA0733B98F9D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HPApp;
+			packageProductDependencies = (
+				328598A626E0A2CF002626F1 /* IQKeyboardManagerSwift */,
+			);
+			productName = HPApp;
+			productReference = 32AFB8D926DB4D8F00EACB0D /* HPApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		32AFB8EE26DB4D9000EACB0D /* HPAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32AFB90626DB4D9000EACB0D /* Build configuration list for PBXNativeTarget "HPAppTests" */;
+			buildPhases = (
+				B5CC37A25D969866AC1693D5 /* [CP] Check Pods Manifest.lock */,
+				32AFB8EB26DB4D9000EACB0D /* Sources */,
+				32AFB8EC26DB4D9000EACB0D /* Frameworks */,
+				32AFB8ED26DB4D9000EACB0D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32AFB8F126DB4D9000EACB0D /* PBXTargetDependency */,
+			);
+			name = HPAppTests;
+			productName = HPAppTests;
+			productReference = 32AFB8EF26DB4D9000EACB0D /* HPAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		32AFB8F926DB4D9000EACB0D /* HPAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 32AFB90926DB4D9000EACB0D /* Build configuration list for PBXNativeTarget "HPAppUITests" */;
+			buildPhases = (
+				9E901812C8975C3E97BA3955 /* [CP] Check Pods Manifest.lock */,
+				32AFB8F626DB4D9000EACB0D /* Sources */,
+				32AFB8F726DB4D9000EACB0D /* Frameworks */,
+				32AFB8F826DB4D9000EACB0D /* Resources */,
+				C58EB6311F10121505B75B2A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				32AFB8FC26DB4D9000EACB0D /* PBXTargetDependency */,
+			);
+			name = HPAppUITests;
+			productName = HPAppUITests;
+			productReference = 32AFB8FA26DB4D9000EACB0D /* HPAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		32AFB8D126DB4D8F00EACB0D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					32AFB8D826DB4D8F00EACB0D = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					32AFB8EE26DB4D9000EACB0D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 32AFB8D826DB4D8F00EACB0D;
+					};
+					32AFB8F926DB4D9000EACB0D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 32AFB8D826DB4D8F00EACB0D;
+					};
+				};
+			};
+			buildConfigurationList = 32AFB8D426DB4D8F00EACB0D /* Build configuration list for PBXProject "HPApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 32AFB8D026DB4D8F00EACB0D;
+			packageReferences = (
+				328598A526E0A2CF002626F1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = 32AFB8DA26DB4D8F00EACB0D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				32AFB8D826DB4D8F00EACB0D /* HPApp */,
+				32AFB8EE26DB4D9000EACB0D /* HPAppTests */,
+				32AFB8F926DB4D9000EACB0D /* HPAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		32AFB8D726DB4D8F00EACB0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				326EA5B226E5CE0D006AD200 /* RestaurantView.storyboard in Resources */,
+				32AFB91326DB95DC00EACB0D /* RestaurantListCell.xib in Resources */,
+				32AFB8E926DB4D9000EACB0D /* LaunchScreen.storyboard in Resources */,
+				32AFB8E626DB4D9000EACB0D /* Assets.xcassets in Resources */,
+				32AFB8E426DB4D8F00EACB0D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AFB8ED26DB4D9000EACB0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AFB8F826DB4D9000EACB0D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E901812C8975C3E97BA3955 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HPApp-HPAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5924EEF4971AB54FAAB4FCC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HPApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B5CC37A25D969866AC1693D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HPAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C58EB6311F10121505B75B2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HPApp-HPAppUITests/Pods-HPApp-HPAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HPApp-HPAppUITests/Pods-HPApp-HPAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HPApp-HPAppUITests/Pods-HPApp-HPAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC163F3D3555BA0733B98F9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HPApp/Pods-HPApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HPApp/Pods-HPApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HPApp/Pods-HPApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		32AFB8D526DB4D8F00EACB0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32AFB91626DBD2E200EACB0D /* Restaurant.swift in Sources */,
+				326EA5AE26E515F8006AD200 /* RestaurantViewController.swift in Sources */,
+				32AFB91026DB945B00EACB0D /* RestaurantListCell.swift in Sources */,
+				32AFB8E126DB4D8F00EACB0D /* RestaurantListViewController.swift in Sources */,
+				32AFB8DD26DB4D8F00EACB0D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AFB8EB26DB4D9000EACB0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32AFB8F426DB4D9000EACB0D /* HPAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		32AFB8F626DB4D9000EACB0D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32AFB8FF26DB4D9000EACB0D /* HPAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		32AFB8F126DB4D9000EACB0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32AFB8D826DB4D8F00EACB0D /* HPApp */;
+			targetProxy = 32AFB8F026DB4D9000EACB0D /* PBXContainerItemProxy */;
+		};
+		32AFB8FC26DB4D9000EACB0D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 32AFB8D826DB4D8F00EACB0D /* HPApp */;
+			targetProxy = 32AFB8FB26DB4D9000EACB0D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		32AFB8E226DB4D8F00EACB0D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32AFB8E326DB4D8F00EACB0D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		32AFB8E726DB4D9000EACB0D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				32AFB8E826DB4D9000EACB0D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		32AFB90126DB4D9000EACB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		32AFB90226DB4D9000EACB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		32AFB90426DB4D9000EACB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AACCFE07922E4663E77E37C /* Pods-HPApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PD8L9QKP8K;
+				INFOPLIST_FILE = HPApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ktskm.981201.HPApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		32AFB90526DB4D9000EACB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13D6BE3D9DAD799CF0A068B6 /* Pods-HPApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PD8L9QKP8K;
+				INFOPLIST_FILE = HPApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ktskm.981201.HPApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		32AFB90726DB4D9000EACB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA9EFD76D356DF1EA1E722E1 /* Pods-HPAppTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PD8L9QKP8K;
+				INFOPLIST_FILE = HPAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ktskm.981201.HPAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HPApp.app/HPApp";
+			};
+			name = Debug;
+		};
+		32AFB90826DB4D9000EACB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 376858B52A995888FC04C65C /* Pods-HPAppTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PD8L9QKP8K;
+				INFOPLIST_FILE = HPAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ktskm.981201.HPAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HPApp.app/HPApp";
+			};
+			name = Release;
+		};
+		32AFB90A26DB4D9000EACB0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34F26F4F5410B8004C77B0A5 /* Pods-HPApp-HPAppUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PD8L9QKP8K;
+				INFOPLIST_FILE = HPAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ktskm.981201.HPAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HPApp;
+			};
+			name = Debug;
+		};
+		32AFB90B26DB4D9000EACB0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC250314AC044BC713ABBFD8 /* Pods-HPApp-HPAppUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PD8L9QKP8K;
+				INFOPLIST_FILE = HPAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.gmail.ktskm.981201.HPAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HPApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		32AFB8D426DB4D8F00EACB0D /* Build configuration list for PBXProject "HPApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AFB90126DB4D9000EACB0D /* Debug */,
+				32AFB90226DB4D9000EACB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32AFB90326DB4D9000EACB0D /* Build configuration list for PBXNativeTarget "HPApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AFB90426DB4D9000EACB0D /* Debug */,
+				32AFB90526DB4D9000EACB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32AFB90626DB4D9000EACB0D /* Build configuration list for PBXNativeTarget "HPAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AFB90726DB4D9000EACB0D /* Debug */,
+				32AFB90826DB4D9000EACB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		32AFB90926DB4D9000EACB0D /* Build configuration list for PBXNativeTarget "HPAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				32AFB90A26DB4D9000EACB0D /* Debug */,
+				32AFB90B26DB4D9000EACB0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		328598A526E0A2CF002626F1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		328598A626E0A2CF002626F1 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 328598A526E0A2CF002626F1 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 32AFB8D126DB4D8F00EACB0D /* Project object */;
+}
