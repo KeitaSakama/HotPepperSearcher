@@ -19,7 +19,7 @@ class RestaurantListCell: UICollectionViewCell {
             }
             
             titleLabel.text = shopInfo?.name
-            addressLabel.text = shopInfo?.address
+            accessLabel.text = shopInfo?.access
             genreLabel.text = shopInfo?.genre.name
       
         }
@@ -27,7 +27,7 @@ class RestaurantListCell: UICollectionViewCell {
     
     @IBOutlet weak var photoImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var accessLabel: UILabel!
     @IBOutlet weak var genreLabel: UILabel!
     
     override func awakeFromNib() {

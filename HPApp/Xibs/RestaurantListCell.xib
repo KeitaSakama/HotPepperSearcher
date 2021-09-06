@@ -20,20 +20,20 @@
                         <rect key="frame" x="10" y="357" width="547" height="100"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="ここに店名が入ります" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSh-MJ-nXu">
-                                <rect key="frame" x="0.0" y="0.0" width="547" height="66"/>
+                                <rect key="frame" x="0.0" y="0.0" width="547" height="68.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ここにジャンルが入ります" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Nk-js-If9">
-                                <rect key="frame" x="0.0" y="66" width="547" height="14.5"/>
+                                <rect key="frame" x="0.0" y="68.5" width="547" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ここに住所が入ります" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zy8-68-boI">
-                                <rect key="frame" x="0.0" y="80.5" width="547" height="19.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ここにアクセスが入ります" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zy8-68-boI">
+                                <rect key="frame" x="0.0" y="83" width="547" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -60,7 +60,7 @@
             <size key="customSize" width="567" height="467"/>
             <connections>
                 <outlet property="TitleLabel" destination="hSh-MJ-nXu" id="mby-aP-jBK"/>
-                <outlet property="addressLabel" destination="Zy8-68-boI" id="Ey4-sI-47K"/>
+                <outlet property="accessLabel" destination="Zy8-68-boI" id="Ey4-sI-47K"/>
                 <outlet property="genreLabel" destination="7Nk-js-If9" id="q8c-JJ-qJb"/>
                 <outlet property="photoImageView" destination="qdy-by-taS" id="Cgt-ID-jBy"/>
                 <outlet property="titleLabel" destination="hSh-MJ-nXu" id="zLV-PE-8Xk"/>
